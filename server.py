@@ -32,7 +32,7 @@ def get_weather():
         status=weather_data["weather"][0]["description"].capitalize(),
         temp=f"{weather_data['main']['temp']:.1f}",
         feels_like=f"{weather_data['main']['feels_like']:.1f}",
-        sunset=f"{weather_data['sys']['sunset']:.1f}"
+        humidity=f"{weather_data['main']['humidity']:.1f}"
         )
 
 
